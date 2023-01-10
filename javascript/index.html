@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+
+<h2>A Program To Compute the Simple Interest</h2>
+<!-- <form> -->
+Principal:<input type="number" id="p" name="" required="">
+<p></p>
+Rate:<input type="number" id="r" name="" required="">
+<p></p>
+Time:<input type="number" id="t" name="" required="">
+<p></p>
+<input type="submit" value="Compute" onclick="return simple()" name="">
+<p id="ans"></p>
+<!-- </form> -->
+
+
+
+
+<script type="text/javascript">
+	function simple() {
+
+		var p,r,t,total;
+
+		p = document.getElementById("p").value;
+		r = document.getElementById("r").value;
+		t = document.getElementById("t").value;
+
+		total = p * r * t / 100;
+
+		document.getElementById("ans").innerHTML = total;
+
+		//window.alert(total);
+
+	}
+</script>
+<hr>
+<h1>Program to compute Area of Circle</h1>
+Radius:<input type="text" id="radius" name="">
+<p></p>
+<input type="submit" onclick="return area()" value="Compute" name="">
+
+<p id="kkkk"></p>
+
+<script type="text/javascript">
+	function area() {
+		var total;
+		var radius = document.getElementById("radius").value;
+
+		total = 2 * 3.142 * radius * radius;
+
+		window.alert(total);
+		
+	}
+</script>
+</body>
+</html>

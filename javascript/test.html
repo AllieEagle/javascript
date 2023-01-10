@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java</title>
+</head>
+<body>
+<script type="text/javascript">
+
+// if statement
+// if else
+// if elseif else
+// switch case
+
+var admin,password;
+
+admin = "admin";
+password = "password";
+
+if (admin == "admin" && password == "ppassword") {
+	document.write("The text is true");
+}
+document.write("<hr>");
+
+if (admin == "adminn") {
+	document.write("This is Admin");
+} else {
+	document.write("The is not Admin");
+}
+document.write("<hr>");
+
+var day = "Monghfy";
+
+if (day == "Mon") {
+	document.write("The is Monday");
+} else if(day == "Tue") {
+	document.write("The is Tuesday");
+} else if(day == "Wed") {
+	document.write("The is Wednesday");
+}else{
+	document.write("The is Not Monday or Tuesday or Wednesday");
+}
+document.write("<hr>");
+
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+        break;
+} 
+
+</script>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var text;
+    switch (new Date().getDay()) {
+    	// case 5:
+    	// 	text = "Today is Friday";
+    	// 	break;
+        case 6:
+            text = "Today is Saturday";
+            break;
+        case 0:
+            text = "Today is Sunday";
+            break;
+        default:
+            text = "Looking forward to the Weekend";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+</body>
+</html>
